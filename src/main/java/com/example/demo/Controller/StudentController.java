@@ -11,5 +11,14 @@ public class StudentController {
     @Autowierd
     private StudentService Service;
 
-    
+    @postMapping("/add")
+    public StudentEntity addStudent(@RequestBody StudentEntity student) {
+        return Service.addStudent(student);
+    }
+    @GetMapping("/all")
+    public List<StudentEntity> getAllStudent() {
+        return Service.getAllStudent();
+    }
+    @GetMapping("/{id}")
+    public StudentEntity getStudentById(@PathVariable Long id) {}
 }
