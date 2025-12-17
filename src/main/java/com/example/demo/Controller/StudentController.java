@@ -1,4 +1,4 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowierd;
 import org.springframework.web.bind.annotation.*;
