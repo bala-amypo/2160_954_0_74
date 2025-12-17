@@ -21,5 +21,7 @@ public class StudentImpl implements StudentServices{
         return Optional.ofNullable(store.get(id));
     }
     @Override
-    public void deleteStudent(Long)
+    public void deleteStudent(Long id){
+        store.remove(id);
+    }
 }
