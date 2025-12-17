@@ -20,5 +20,14 @@ public class StudentController {
         return Service.getAllStudent();
     }
     @GetMapping("/{id}")
-    public StudentEntity getStudentById(@PathVariable Long id) {}
+    public StudentEntity getStudentById(@PathVariable Long id) {
+        return Service.getStudentById(id);
+    }
+    @PutMapping("/update/{id}")
+    public StudentEntity updateStudent(
+        @PathVariable Long id,
+        @RequestBody StudentEntity Student){
+            return Service.updateStudent(id,Student);
+        }
+    
 }
