@@ -7,9 +7,9 @@ import com.example.demo.Service.StudentService;
 
 @RestController
 @RequestMapping("/student")
-public class StudentController {
+public class StudentController { //Class name
     @Autowierd
-    private StudentService Service;
+    private StudentService Service;//service file class  name
 
     @postMapping("/add")
     public StudentEntity addStudent(@RequestBody StudentEntity student) {
